@@ -1,9 +1,6 @@
 # TODOList
 
 Необходимо создать приложение-задачник.
-Документацию по back-end можно найти тут:
-
-https://uxcandy.com/~shapoval/test-task-backend/docs/v2.html
 
 Задачи состоят из:
 - имени пользователя;
