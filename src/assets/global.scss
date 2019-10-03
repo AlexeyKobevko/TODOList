@@ -1,0 +1,45 @@
+@import "_vars";
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: $font;
+}
+body {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $main;
+}
+main {
+  height: calc(100vh - 20vh);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-top: 1em;
+  box-sizing: border-box;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: 1fr;
+  grid-template-areas: "aside content";
+}
+
+aside {
+  grid-area: aside;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+.content {
+  grid-area: content;
+  padding: 0 0 0 5em;
+}
+//::-webkit-scrollbar {
+//  width: 0px;  /* Remove scrollbar space */
+//  background: transparent;  /* Optional: just make scrollbar invisible */
+//}
+///* Optional: show position indicator in red */
+//::-webkit-scrollbar-thumb {
+//  background: #FF0000;
+//}

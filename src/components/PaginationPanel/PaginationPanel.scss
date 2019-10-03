@@ -1,0 +1,24 @@
+@import "assets/_vars.scss";
+
+.pag-panel-wrapper {
+  display: flex;
+  max-width: 30vw;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+.pag-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #73cff8;
+  padding: 0.2em;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  min-width: 2em;
+  min-height: 2em;
+  margin: 0 0.2em 0.2em 0;
+  cursor: pointer;
+}
+.active-pag-item {
+  background-color: $link;
+}

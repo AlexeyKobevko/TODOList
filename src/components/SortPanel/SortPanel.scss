@@ -1,0 +1,28 @@
+@import "assets/_vars.scss";
+
+.sort-panel-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 30vw;
+  margin: 2em 0;
+  font-size: 0.8em;
+  & .sort-panel__item:not(:last-child) {
+    border-right: 0.5px solid $font;
+  }
+}
+.sort-panel__item {
+  display: flex;
+  align-items: center;
+  width: 9vw;
+  margin-right: 0.5em;
+}
+.sort-field {
+  margin-right: 0.3em;
+  cursor: pointer;
+}
+.sort-direction {
+  cursor: pointer;
+}
+.active-field {
+  color: $link;
+}

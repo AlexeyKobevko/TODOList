@@ -1,0 +1,75 @@
+@import "assets/_vars.scss";
+
+.todo-list__item {
+  margin-bottom: 2em;
+}
+.task__user-info-wrapper {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+.user-info__img-wrapper {
+  max-width: 3em;
+  margin-right: 1em;
+  & img {
+    width: 100%;
+  }
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & div span {
+    color: $link;
+  }
+}
+.task-text {
+  box-sizing: border-box;
+  padding: 1em;
+  border: 1px solid $link;
+  max-width: 30vw;
+  margin-bottom: 0.5em;
+  & span {
+    display: block;
+    font-size: 0.8em;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+  }
+}
+.task-status {
+  margin-bottom: 1em;
+  & span {
+    color: $link;
+  }
+}
+.admin-panel {
+  display: flex;
+  max-width: 30vw;
+  justify-content: space-between;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: $link;
+  border: 0;
+  padding: 0.8em;
+  color: $main;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background: #4d90fe;
+  color: $font;
+}
+.error-field-todo {
+  display: flex;
+  justify-content: center;
+  color: red;
+  margin-top: 1em;
+  max-width: 30vw;
+}

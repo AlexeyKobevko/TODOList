@@ -1,0 +1,19 @@
+@import "assets/_vars.scss";
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+  margin-bottom: 3em;
+  & input {
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    padding: 0.5em;
+  }
+}
+.error-field {
+  display: flex;
+  justify-content: center;
+  color: red;
+  margin-top: 1em;
+}

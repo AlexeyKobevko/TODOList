@@ -1,0 +1,15 @@
+@import 'assets/_vars.scss';
+
+nav {
+  margin: 2em 0 0 2em;
+  & li {
+    line-height: 2;
+    &>a {
+      text-decoration: none;
+      color: $link;
+    }
+  }
+}
+.selected {
+  font-weight: bold;
+}
